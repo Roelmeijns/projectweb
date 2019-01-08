@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+		<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
+</header>
+<section>
+		<fieldset>
+			<h2>
+				<i class="fas fa-book"></i>   verhaal zoeken<i class="fas fa-caret-down"></i>
+			</h2>
+			<form>
+				<ul>
+					<li>
+						<input type="radio" id="Nieuwste" name="selector">
+						<label for="Nieuwste">Nieuwste</label>
+					</li>
+					<li>
+						<input type="radio" id="alfabetisch" name="selector">
+						<label for="alfabetisch">Alfabetisch</label>
+					</li>
+					<li>
+						<input type="radio" id="Populariteit" name="selector">
+						<label for="Populariteit">Populariteit</label>
+					</li>
+				</ul>
+			<select>
+				<option>
+					Genre
+				</option>
+				<option>
+					Horror
+				</option>
+				<option>
+					Drama
+				</option>
+				<option>
+					NSFW
+				</option>
+				<option>
+					Triller
+				</option>				
+				<option>
+					Liefde
+				</option>
+			</select>
+			<select>
+				<option>
+					Leesduur
+				</option>
+				<option>
+					0 tot 10 minuten
+				</option>
+				<option>
+					10 tot 20 minuten
+				</option>
+				<option>
+					20 tot 30 minuten
+				</option>
+				<option>
+					30+ minuten
+				</option>				
+			</select>
+			<input type="submit" name="" value="Zoeken">
+			</form>
+		</fieldset>
+		<article>
+			<img src="images/droom.jpg">
+			<div class="story-text">
+				<span class="overlay">Liefde</span>
+				<span class="titles"><h3>Droom</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">20 minuten</span></p>
+				</span>
+			</div>
+		</article>
+		<article>
+			<img src="images/dialoog.png">
+			<div class="story-text">
+				<span class="overlay">Thriller</span>
+				<span class="titles"><h3>Dialoog</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">60 minuten</span></p>
+				</span>
+			</div>
+		</article>
+</section>
+		<nav>
+			<ul>
+				<li><a class="active" href="#home"><i class="fas fa-home"></i></a></li>
+				<li><a href="#Search"><i class="fas fa-search"></i></a></li>
+				<li><a href="#Liked"><i class="fas fa-heart"></i></a></li>
+				<li><a href="#Downloads"><i class="fas fa-download"></i></a></li>
+			</ul>
+		</nav>
+<footer>
+</footer>
+</body>
+</html>
