@@ -1,7 +1,6 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function filter() {
-  document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("fieldset-small").classList.toggle("fieldset-big");
 }
 function searchScreen() {

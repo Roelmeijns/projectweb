@@ -95,7 +95,7 @@ header nav button{
 	border-radius: 0.1875em;
 }
 h4{
-	margin: 0 auto 2.5em;
+	margin: 50px 0 0 0;
     font-size: 4em;
     font-weight: 300;
     text-align: center;
@@ -127,20 +127,19 @@ input::-webkit-search-cancel-button {
     width: 19%;
 }
 .close-popup{
-	margin-top: -5em;
-    margin-right: -2.5em;
+	margin-top: -2.5em;
+    margin-right: -2em;
     float: right;
     color: #971780;
-    background-color: white;
+    background: rgba(255,255,255,0.95);
     border: none;
     font-size: 1.2em;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 .close-popup:hover,
 .close-pop-up:focus {
-
 	font-size: 2.5em;
 }
 form{
@@ -277,7 +276,7 @@ article{
     font-size: 1em !important;
 }
 span .fa-download{
-
+	color: gray;
 	font-size: 2em !important;
 }
 
@@ -328,6 +327,7 @@ div nav ul {
   bottom: 0;
   width: 100%;
   border-top: 0.0625em solid #971780;
+  z-index: 1;
 }
 
 div nav ul li {
@@ -364,7 +364,6 @@ div nav ul li a:hover:not(.active) {
 }
 
 footer{
-
 	height: 4.0625em;
 }
 
@@ -377,6 +376,35 @@ footer{
 .flex-container > article{
 
 	margin: 0.1875em;
+}
+
+/*verhalen pagina*/
+
+.verhaal{
+	height: unset;
+}
+/*zoek pagina*/
+
+.zoekbalk{
+    height: 2.375em;
+    padding-left: 0.625em;
+    border: 0.0625em solid rgba(234, 234, 234, 1);
+    border-radius: 0.125em;
+    width: 85%;
+    float: left;
+    background: white;
+    color: gray;
+    text-transform: unset;
+    }
+.zoekformulier{
+	margin: 0 0.625em 0.9375em 0.625em;
+}
+.zoekknop{
+	background-color: transparent;
+    width: 10%;
+    color: purple;
+    height: 2.375em;
+    border: none;
 }
 
 
@@ -402,13 +430,10 @@ article{
 		display: none;
 	}
 	.dropdown-content{
-		visibility: hidden;
 		transition: all ease 0.6s;
 	}
 
-	.show{
-		visibility: visible;
-		box-shadow: inset -25em 0 0 0 var(--rood);
+	.show{	
 	}
 
 	.left {
@@ -419,6 +444,7 @@ article{
 	  	min-width: 99%;
 	  }
 	fieldset {
+		overflow: hidden;
 	    max-width: 100%;
 	     max-height: 3.875em;
 
@@ -427,6 +453,7 @@ article{
 		display: none;
 	}
 }
+
 @media only screen and (min-width: 68.75em) {
 
 	.flex-container{
