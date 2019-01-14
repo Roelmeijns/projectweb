@@ -1,3 +1,24 @@
+html{
+	font-size: 1em;
+	font-family: MuseoSans-Med, Helvetica, Arial, sans-serif;
+}
+@font-face{
+	font-family: Regular;
+	src: url(fonts/MuseoSans_500_Italic.otf);
+
+}
+.search-screen{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1399;
+	background: red;
+	z-index: 2;
+	opacity: 0.9;
+}
+
 header{
 	margin: 0.625em 1.875em;
 	height: 3.125em;
@@ -21,6 +42,7 @@ body{
 section{
 	padding: 0em 1.875em;
 	margin-top: 1.3125em;
+	z-index: 0;
 }
 fieldset{
 	background-color: #FAFAFA;
@@ -38,9 +60,9 @@ h2{
 	background-color: #6d105c;
 	color: #fff;
     text-transform: uppercase;
-    margin: 0.4286875em 0.4286875em 0em 0.4286875em;
+    margin: 0.4286875em 0.4286875em 0.4286875em 0.4286875em;
     font-size: 1em;
-
+    cursor: pointer;
 }
 h2 i{
 	margin-right: 0.625em;
@@ -65,6 +87,113 @@ fieldset ul li{
 	color: #6d105c;
 
 }
+h4{
+	margin: 0 auto 40px;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    color: #99258d;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background: rgba(255,255,255,0.95);
+  text-align: center;
+}
+.pop-up-search{
+	padding: 2vmin 8vmin 2vmin 2vmin;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+    border: 1px solid #7c7d7d;
+    border-radius: 3px;
+    background: none;
+    box-shadow: 0 0 10px transparent;
+    width: 80%;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2); 
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); 
+	box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+
+}
+input:focus {
+	 outline: none !important;
+    border-color: #99258d;
+    box-shadow: 0 0 10px #99258d;
+}
+input::-webkit-search-cancel-button {
+  color: #99258d;
+}
+.modal form{
+	text-align: left;
+	display: inline-block;
+	width: 80%
+}
+.search-button{
+	height: 2.5em;
+    margin: 0px!important;
+    padding: 0 1em;
+    font-weight: 700;
+    background: #99258d;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #99258d;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 19%;
+}
+.close-popup{
+	margin-top: -80px;
+    margin-right: -40px;
+    float: right;
+    color: #971780;
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.close-popup:hover,
+.close-pop-up:focus {
+	font-size: 40px;
+
+}
+/*/* Modal Content/Box 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  display: inline-block;
+  border: 1px solid #7c7d7d;
+  border-radius: 3px;
+  background: none;
+  text-align: left;
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow 350ms,border-color 250ms;
+}
+.modal-content p{
+	color: #99258d;
+	text-align: left;
+}
+*/
+
+#myDropdown{
+	
+}
 .new{
     background-color: #F2C532;
     color: black;
@@ -72,12 +201,13 @@ fieldset ul li{
 form{
 	text-align: left;
 }
-input[type=radio]{
+
+li input[type=radio]{
 	visibility: hidden;
 	position: absolute;
 	cursor: pointer;
 }
-input[type=radio]:checked + label{
+li input[type=radio]:checked + label{
 	background-color: #F2C532;
 	color: black;
 }
@@ -89,8 +219,9 @@ select{
 	border: 0.0625em solid rgba(234, 234, 234, 1);
 	border-radius: 0.125em;
 	width: 93%;
+	background: white;
 }
-input{
+fieldset input{
 	text-transform: uppercase;
 	background-color: gray;
 	border: 0.0625em solid gray;
@@ -102,7 +233,7 @@ input{
 }
 article{
 	max-width: 50%;
-	display: inline-block;
+	display: block;
 	border: 0.0625em solid #a6c4c4;
 	position: relative;
 	margin: 0.625em 0em 0.75em 0em;
@@ -118,7 +249,6 @@ article img{
 }
 .overlay{
 	position: absolute;
-	bottom: 0.0625em;
 	text-transform: uppercase;
     font-size: 0.8em;
     background: #99258d;
@@ -127,7 +257,7 @@ article img{
     width: 	6em;
     height: 1.0625em;
     text-align: center;
-    bottom: 6.3em;
+    bottom: 5.9em;
 }
 .timelength{
 	color: #712166;
@@ -136,12 +266,12 @@ article img{
 }
 h3{
 	margin: 0 0 0 0;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 100;
     color: #020303;
 }
 article p{
-	margin: 0 0 0.625em 0;
+	margin: 0 0 1em 0;
 	color: #707070;
 }
 div nav ul {
@@ -176,7 +306,9 @@ div nav ul li a {
 div nav ul li a:hover:not(.active) {
   color: #971780;
 }
-
+.last-item{
+	width: 23%;
+}
 .active {
   color: #971780;
 }
@@ -197,7 +329,7 @@ header nav button{
 	border: none;
 	font-size: 1.2em;
 }
-#search{
+#myBtn{
 	right: 0em;
 }
 #profile{
@@ -211,12 +343,13 @@ picture img{
 	max-width: 100%;
 	position: absolute;
 }
-.left{
-	margin-right: 0.625em;
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.right{
-	position: relative;
-	right: 0;
+.flex-container > article{
+	margin: 3px;
 }
 @media only screen and (max-width: 61.25em) {
 
@@ -234,11 +367,22 @@ div nav ul li {
 fieldset{
 	margin-bottom: 20px;
 }
-
+article{
+	display: inline-block;
+}
 }
 @media only screen and (max-width: 767px) {
 .top{
 	display: none;
+}
+.dropdown-content{
+	visibility: hidden;
+}
+.fieldset-big{
+	max-height: unset;
+}
+.show{
+	visibility: visible;
 }
 .left {
     margin-right: 0em;
@@ -248,11 +392,51 @@ article{
   }
 fieldset {
     max-width: 100%;
+     max-height: 62px;
+
 }
 picture img{
 	display: none;
 }
 }
 @media only screen and (min-width: 1100px) {
+
+	.flex-container{
+		margin-top: 40px;
+	}
+
+}
+@media only screen and (min-width: 784px) {
+
+	picture img{
+		height: 25%;
+	}
+
+}
+@media only screen and (min-width: 923px) {
+
+	picture img{
+		height: 30%;
+	}
+	.flex-container{
+		margin-top: 60px;
+	}
+
+
+}
+@media only screen and (min-width: 1366px) {
+
+	picture img{
+		height: 56%;
+	}
+	article{
+		min-width: 32%;
+	}
+	.flex-container{
+		margin-top: 135px;
+	}
+	fieldset{
+		    max-width: 35%;
+	}
 
 }

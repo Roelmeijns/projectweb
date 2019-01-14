@@ -7,26 +7,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<!-- <div id="searchScreen"> -->
 <header>
 	<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
 		<nav class="top">
 			<a href="#home">
 				<button id="profile"><i class="fas fa-download"></i></button>
 			</a>
-				<button id="search"><i class="fas fa-search"></i></button>
+				<button id="myBtn"><i class="fas fa-search"></i></button>
 		</nav>
+		<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<form action="/search">
+			<h4>Wow air Verhalen</h4>
+			<span class="close"><i class="fas fa-times close-popup"></i></span>
+			<input class="pop-up-search" type="search" name="" placeholder="Verhalen zoeken...">
+			<button class="search-button" type="submit">zoeken</button>
+		</form>
+
+
+<!-- <h4>Wow air Verhalen</h4>
+   Modal content 
+  <span class="close">&times;</span>
+  <div class="modal-content">
+  	<i class="fas fa-search"> 
+  	<label>Verhalen zoeken...</label>
+  	<input type="search" name="" placeholder="Verhalen zoeken...">
+    <p>Verhalen zoeken...</i></p>
+  </div>
+      <button class="search-container__submit purple-btn" type="submit">Zoek</button> -->
+</div>
 </header>
-<div>
 	<picture>
+	<source media="(min-width: 784px)" srcset="images/bannerbig.png"> 
 		<img src="images/bannermedium.png">
 	</picture>
-</div>
 <section>
-	<fieldset>
+	<fieldset id="fieldset-small">
+		<a onclick="filter()"> 
 			<h2>
 				<i class="fas fa-book"></i>   verhaal zoeken<i class="fas fa-caret-down"></i>
 			</h2>
-			<form>
+		</a>
+			<form id="myDropdown" class="dropdown-content">
 				<ul>
 					<li>
 						<input type="radio" id="Nieuwste" name="selector">
@@ -81,16 +104,17 @@
 			<input type="submit" name="" value="Zoeken">
 			</form>
 		</fieldset>
-		<article class="left">
+		<div class="flex-container">
+		<article>
 			<img src="images/droom.jpg">
 			<div class="story-text">
-				<span class="overlay">Liefde</span>
+				<span class="overlay">Drama</span>
 				<span class="titles"><h3>Droom</h3>
 				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">20 minuten</span></p>
 				</span>
 			</div>
 		</article>
-		<article class="right">
+		<article>
 			<a href="verhalen/kleinscherm.pdf" target="_blank"><img src="images/dialoog.png"></a>
 			<div class="story-text">
 				<span class="overlay">Thriller</span>
@@ -99,24 +123,43 @@
 				</span>
 			</div>
 		</article>
-		<article class="left">
-			<img src="images/droom.jpg">
+		<article>
+			<img src="images/verliefd2.jpg">
 			<div class="story-text">
-				<span class="overlay">Thriller</span>
-				<span class="titles"><h3>Dialoog</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">60 minuten</span></p>
+				<span class="overlay">Liefde</span>
+				<span class="titles"><h3>Verliefd</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">10 minuten</span></p>
 				</span>
 			</div>
 		</article>
-		<article class="right">
-			<img src="images/verliefd.jpg">
+		<article>
+			<img src="images/verrast.png">
 			<div class="story-text">
-				<span class="overlay">Thriller</span>
-				<span class="titles"><h3>Dialoog</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">60 minuten</span></p>
+				<span class="overlay">Liefde</span>
+				<span class="titles"><h3>Verrast</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">20 minuten</span></p>
 				</span>
 			</div>
 		</article>
+		<article>
+			<img src="images/gefrustreed.png">
+			<div class="story-text">
+				<span class="overlay">Thriller</span>
+				<span class="titles"><h3>Gefrustreerd</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">30 minuten</span></p>
+				</span>
+			</div>
+		</article>
+		<article>
+			<img src="images/vergezocht.png">
+			<div class="story-text">
+				<span class="overlay">Drama</span>
+				<span class="titles"><h3>Vergezocht</h3>
+				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">6 minuten</span></p>
+				</span>
+			</div>
+		</article>
+	</div>
 </section>
 <footer>
 	<div>
@@ -125,10 +168,13 @@
 				<li><a class="active" href="#home"><i class="fas fa-home"></i></a></li>
 				<li><a href="#Search"><i class="fas fa-search"></i></a></li>
 				<li><a href="#Liked"><i class="fas fa-heart"></i></a></li>
-				<li><a href="#Downloads"><i class="fas fa-download"></i></a></li>
+				<li class="last-item"><a href="#Downloads"><i class="fas fa-download"></i></a></li>
 			</ul>
 		</nav>
 	</div>
 </footer>
+</div>
 </body>
 </html>
+	<script type="text/javascript" src="javascript/javascript.js">
+	</script>
