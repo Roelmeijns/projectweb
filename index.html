@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>home</title>
+	<!-- title + favicon -->
+	<title>WOW air | 99 verhalen</title> 
+	<link rel="shortcut icon" href="images/fav.ico">
+	<!-- links naar css en font awesome -->
 	<link rel="stylesheet" type="text/css" href="css/css.css">	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<!-- <div id="searchScreen"> -->
 <header>
+	<!-- top nav bar met logo, zoek icon en profiel icon -->
 	<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
 		<nav class="top">
 			<a href="#home">
@@ -16,7 +19,7 @@
 			</a>
 				<button id="myBtn"><i class="fas fa-search"></i></button>
 		</nav>
-		<!-- The Modal -->
+		<!-- pop-up scherm die de zoek funcite opent -->
 	<div id="myModal" class="modal">
 		<form action="/search">
 			<h4>Wow air Verhalen</h4>
@@ -24,31 +27,22 @@
 			<input class="pop-up-search" type="search" name="" placeholder="Verhalen zoeken...">
 			<button class="search-button" type="submit">zoeken</button>
 		</form>
-
-
-<!-- <h4>Wow air Verhalen</h4>
-   Modal content 
-  <span class="close">&times;</span>
-  <div class="modal-content">
-  	<i class="fas fa-search"> 
-  	<label>Verhalen zoeken...</label>
-  	<input type="search" name="" placeholder="Verhalen zoeken...">
-    <p>Verhalen zoeken...</i></p>
-  </div>
-      <button class="search-container__submit purple-btn" type="submit">Zoek</button> -->
-</div>
+	</div>
 </header>
+	<!-- banner die verschilt per grootte van het scherm -->
 	<picture>
-	<source media="(min-width: 784px)" srcset="images/bannerbig.png"> 
+		<source media="(min-width: 784px)" srcset="images/bannerbig.png"> 
 		<img src="images/bannermedium.png">
 	</picture>
 <section>
-	<fieldset id="fieldset-small">
+	<!-- Content van de site. -->
+	<fieldset id="fieldset-small"> <!-- filter systeem voor klein scherm met onclick veranderingen -->
 		<a onclick="filter()"> 
 			<h2>
 				<i class="fas fa-book"></i>   verhaal zoeken<i class="fas fa-caret-down"></i>
 			</h2>
 		</a>
+		<!-- de form die onclick naar beneden schuift -->
 			<form id="myDropdown" class="dropdown-content">
 				<ul>
 					<li>
@@ -104,13 +98,21 @@
 			<input type="submit" name="" value="Zoeken">
 			</form>
 		</fieldset>
+		<!-- de verhalen in een flex box waardoor ze meeschalen en als grid werken -->
 		<div class="flex-container">
 		<article>
 			<img src="images/droom.jpg">
 			<div class="story-text">
 				<span class="overlay">Drama</span>
 				<span class="titles"><h3>Droom</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">20 minuten</span></p>
+				<!-- Icons opgestapeld omdat er dan een cijfer in kan staan -->
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">27</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
@@ -119,7 +121,13 @@
 			<div class="story-text">
 				<span class="overlay">Thriller</span>
 				<span class="titles"><h3>Dialoog</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">60 minuten</span></p>
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">15</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
@@ -128,7 +136,13 @@
 			<div class="story-text">
 				<span class="overlay">Liefde</span>
 				<span class="titles"><h3>Verliefd</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">10 minuten</span></p>
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">8</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
@@ -137,7 +151,13 @@
 			<div class="story-text">
 				<span class="overlay">Liefde</span>
 				<span class="titles"><h3>Verrast</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">20 minuten</span></p>
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">32</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
@@ -146,7 +166,13 @@
 			<div class="story-text">
 				<span class="overlay">Thriller</span>
 				<span class="titles"><h3>Gefrustreerd</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">30 minuten</span></p>
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">5</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
@@ -155,12 +181,19 @@
 			<div class="story-text">
 				<span class="overlay">Drama</span>
 				<span class="titles"><h3>Vergezocht</h3>
-				<p><i class="fas fa-heart"></i> <i class="fas fa-download"></i><span class="timelength">6 minuten</span></p>
+				<p>
+					<span class="fa-stack fa-3x">
+  							<i class="fas fa-heart fa-stack-2x"></i>
+ 		 					<strong class="fa-stack-1x calendar-text">10</strong>
+					</span> 
+					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
+				</p>
 				</span>
 			</div>
 		</article>
 	</div>
 </section>
+<!-- Footer nav bar voor mobiel scherm -->
 <footer>
 	<div>
 		<nav class="bottom">
