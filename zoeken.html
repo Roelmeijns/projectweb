@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
 	<!-- title + favicon -->
 	<title>WOW air | 99 verhalen</title> 
@@ -14,9 +14,7 @@
 	<!-- top nav bar met logo, zoek icon en profiel icon -->
 	<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
 		<nav class="top">
-			<a href="#home">
 				<button id="profile"><i class="fas fa-download"></i></button>
-			</a>
 				<button id="myBtn"><i class="fas fa-search"></i></button>
 		</nav>
 		<!-- pop-up scherm die de zoek funcite opent -->
@@ -35,6 +33,7 @@
 		<img src="images/bannermedium.png">
 	</picture>
 <section>
+	<form class="zoekformulier" action="/search">
 	<!-- Content van de site. -->
 	<fieldset id="fieldset-small"> <!-- filter systeem voor klein scherm met onclick veranderingen -->
 		<a onclick="filter()"> 
@@ -43,11 +42,10 @@
 			</h2>
 		</a>
 		<!-- de form die onclick naar beneden schuift -->
-		<form class="zoekformulier" action="/search">
 			<input class="zoekbalk" type="search" name="" placeholder="Zoeken...">
 			<button class="zoekknop" type="submit"><i class="fas fa-search"></i></button>
-		</form>
 		</fieldset>
+				</form>
 		
 	
 </section>

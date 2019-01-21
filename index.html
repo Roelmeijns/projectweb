@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
 	<!-- title + favicon -->
 	<title>WOW air | 99 verhalen</title> 
@@ -14,9 +14,7 @@
 	<!-- top nav bar met logo, zoek icon en profiel icon -->
 	<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
 		<nav class="top">
-			<a href="#home">
 				<button id="profile"><i class="fas fa-download"></i></button>
-			</a>
 				<button id="myBtn"><i class="fas fa-search"></i></button>
 		</nav>
 		<!-- pop-up scherm die de zoek funcite opent -->
@@ -24,7 +22,7 @@
 		<form action="/search">
 			<h4>Wow air Verhalen</h4>
 			<span class="close"><i class="fas fa-times close-popup"></i></span>
-			<input class="pop-up-search" type="search" name="" placeholder="Verhalen zoeken...">
+			<input class="pop-up-search" type="search" name="zoeken" placeholder="Verhalen zoeken...">
 			<button class="search-button" type="submit">zoeken</button>
 		</form>
 	</div>
@@ -32,9 +30,10 @@
 	<!-- banner die verschilt per grootte van het scherm -->
 	<picture>
 		<source media="(min-width: 784px)" srcset="images/bannerbig.png"> 
-		<img src="images/bannermedium.png">
+		<img src="images/bannermedium.png" alt="banner">
 	</picture>
 <section>
+		<form id="myDropdown" class="dropdown-content">
 	<!-- Content van de site. -->
 	<fieldset id="fieldset-small"> <!-- filter systeem voor klein scherm met onclick veranderingen -->
 		<a onclick="filter()"> 
@@ -43,8 +42,7 @@
 			</h2>
 		</a>
 		<!-- de form die onclick naar beneden schuift -->
-			<form id="myDropdown" class="dropdown-content">
-				<ul>
+				<ul class="sorteren">
 					<li>
 						<input type="radio" id="Nieuwste" name="selector">
 						<label class="new" for="Nieuwste">Nieuwste</label>
@@ -95,16 +93,16 @@
 					30+ minuten
 				</option>				
 			</select>
-			<input type="submit" name="" value="Zoeken">
-			</form>
+			<input type="submit" name="zoeken" value="Zoeken">
 		</fieldset>
+		</form>
 		<!-- de verhalen in een flex box waardoor ze meeschalen en als grid werken -->
 		<div class="flex-container">
 		<article>
-			<img src="images/droom.jpg">
+			<img alt="thumb" src="images/droom.jpg">
 			<div class="story-text">
 				<span class="overlay">Drama</span>
-				<span class="titles"><h3>Droom</h3>
+				<h3>Droom</h3>
 				<!-- Icons opgestapeld omdat er dan een cijfer in kan staan -->
 				<p>
 					<span class="fa-stack fa-3x">
@@ -113,14 +111,13 @@
 					</span> 
 					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 		<article>
-			<a href="verhaal.html"><img src="images/dialoog.png"></a>
+			<a href="verhaal.html"><img alt="thumb" src="images/dialoog.png"></a>
 			<div class="story-text">
 				<span class="overlay">Thriller</span>
-				<span class="titles"><h3>Dialoog</h3>
+				<h3>Dialoog</h3>
 				<p>
 					<span class="fa-stack fa-3x">
   							<i class="fas fa-heart fa-stack-2x"></i>
@@ -128,14 +125,13 @@
 					</span> 
 					<a href="verhalen/kleinscherm.pdf" target="_blank"><i class="fas fa-download"></i></a><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 		<article>
-			<img src="images/verliefd2.jpg">
+			<img alt="thumb" src="images/verliefd2.jpg">
 			<div class="story-text">
 				<span class="overlay">Liefde</span>
-				<span class="titles"><h3>Verliefd</h3>
+				<h3>Verliefd</h3>
 				<p>
 					<span class="fa-stack fa-3x">
   							<i class="fas fa-heart fa-stack-2x"></i>
@@ -143,14 +139,13 @@
 					</span> 
 					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 		<article>
-			<img src="images/verrast.png">
+			<img  alt="thumb" src="images/verrast.png">
 			<div class="story-text">
 				<span class="overlay">Liefde</span>
-				<span class="titles"><h3>Verrast</h3>
+				<h3>Verrast</h3>
 				<p>
 					<span class="fa-stack fa-3x">
   							<i class="fas fa-heart fa-stack-2x"></i>
@@ -158,14 +153,13 @@
 					</span> 
 					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 		<article>
-			<img src="images/gefrustreed.png">
+			<img alt="thumb" src="images/gefrustreed.png">
 			<div class="story-text">
 				<span class="overlay">Thriller</span>
-				<span class="titles"><h3>Gefrustreerd</h3>
+				<h3>Gefrustreerd</h3>
 				<p>
 					<span class="fa-stack fa-3x">
   							<i class="fas fa-heart fa-stack-2x"></i>
@@ -173,14 +167,13 @@
 					</span> 
 					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 		<article>
-			<img src="images/vergezocht.png">
+			<img alt="thumb" src="images/vergezocht.png">
 			<div class="story-text">
 				<span class="overlay">Drama</span>
-				<span class="titles"><h3>Vergezocht</h3>
+				<h3>Vergezocht</h3>
 				<p>
 					<span class="fa-stack fa-3x">
   							<i class="fas fa-heart fa-stack-2x"></i>
@@ -188,7 +181,6 @@
 					</span> 
 					<i class="fas fa-download"></i><span class="timelength">20 minuten</span>
 				</p>
-				</span>
 			</div>
 		</article>
 	</div>
@@ -201,13 +193,12 @@
 				<li><a class="active" href="#home"><i class="fas fa-home"></i></a></li>
 				<li><a href="zoeken.html"><i class="fas fa-search"></i></a></li>
 				<li><a href="#Liked"><i class="fas fa-heart"></i></a></li>
-				<li class="last-item"><a href="#Downloads"><i class="fas fa-download"></i></a></li>
+				<li class="last-item"><a href="#Downloads"><i class="downloadBottom fas fa-download"></i></a></li>
 			</ul>
 		</nav>
 	</div>
 </footer>
-</div>
+<script src="javascript/javascript.js">
+</script>
 </body>
 </html>
-	<script type="text/javascript" src="javascript/javascript.js">
-	</script>

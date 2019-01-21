@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<!-- title + favicon -->
 	<title>WOW air | 99 verhalen</title> 
@@ -14,9 +14,7 @@
 	<!-- top nav bar met logo, zoek icon en profiel icon -->
 	<a href="index.html"><img src="images/sitelogo.svg" alt="RetLogo"></a>
 		<nav class="top">
-			<a href="#home">
 				<button id="profile"><i class="fas fa-download"></i></button>
-			</a>
 				<button id="myBtn"><i class="fas fa-search"></i></button>
 		</nav>
 		<!-- pop-up scherm die de zoek funcite opent -->
@@ -24,35 +22,38 @@
 		<form action="/search">
 			<h4>Wow air Verhalen</h4>
 			<span class="close"><i class="fas fa-times close-popup"></i></span>
-			<input class="pop-up-search" type="search" name="" placeholder="Verhalen zoeken...">
+			<input class="pop-up-search" type="search" name="zoeken" placeholder="Verhalen zoeken...">
 			<button class="search-button" type="submit">zoeken</button>
 		</form>
 	</div>
 </header>
-	<!-- banner die verschilt per grootte van het scherm -->
-	<picture>
-		<source media="(min-width: 784px)" srcset="images/bannerbig.png"> 
-		<img src="images/bannermedium.png">
-	</picture>
+
 <section>
 	<!-- Content van de site. -->
 		<!-- de verhalen in een flex box waardoor ze meeschalen en als grid werken -->
-		<div class="flex-container">
-		<article>
-			<img  class="verhaal" src="verhalen/kleinscherm.png">
-			<div class="story-text">
-				<span class="overlay">Thriller</span>
-				<span class="titles"><h3>Dialoog</h3>
-				<p>
-					<span class="fa-stack fa-3x">
-  							<i class="fas fa-heart fa-stack-2x"></i>
- 		 					<strong class="fa-stack-1x calendar-text">15</strong>
-					</span> 
-					<a href="verhalen/kleinscherm.pdf" target="_blank"><i class="fas fa-download"></i></a><span class="timelength">20 minuten</span>
-				</p>
-				</span>
-			</div>
-		</article>
+		<div class="verhaal">
+			<img class="verhaalthumb" src="images/dialoog.png" alt="thumb">
+			<p class="sterk">-wat zoek je?</p>
+			<p class="zwak">-Hoe bedoel je. Wat zoek je?</p>
+			<p class="sterk">– Nou gewoon, hoe ik het zeg: wat zoek je? Zo’n moeilijke vraag is dat toch niet?</p>
+			<p class="zwak">– Hoe weet je dat ik wat zoek?</p>
+			<p class="sterk">– Ik zie het aan je kop. Aan de manier waarop je die bus uitstapte en die kinderwagen voortduwde. Door weer en wind. Vastberaden, maar toch vol twijfel.</p>
+			<p class="zwak">– Tjonge, dat je dat er allemaal in leest. Nu ja, goed dan. Ik ben op zoek naar Stijloefeningen van Raymond Queneau. Ben ik eigenlijk al weken naar op zoek. Heb jij het?</p>
+			<p class="sterk">– Waar dacht je dat ik naar op weg was?</p>
+			<p class="zwak">– Ah. Ewzxcuus. Ik was even vergeten dat de bibliotheek tegenwoordig aan het IJ ligt. Wat een chaos hier trouwens, hè. Het lijkt verdomme wel alsof hier een oorlog heeft gewoed.</p>
+			<p class="sterk">– Je bedoelt al die bouwputten? Ja, je zou ze de kost moeten geven, dat gemeentebestuur dat zo nodig alles overhoop moet halen om zijn of haar naam terug te zien op een straatbordje.</p>
+			<p class="sterk">– Wat wilde die vrouw? Ik dacht: ik hou me even afzijdig. Ze was niet Nederlands hè? Dat hoorde ik nog wel.</p>
+			<p class="zwak">– Nee, ze was Frans. En ze wilde weten of dit het postkantoor was. Dat is het niet.</p>
+			<p class="sterk">– Nee, dat weet m’n reet ook wel.</p>
+			<p class="zwak">– Nou nou, dat is nog geen reden om grof te worden.</p>
+			<p class="sterk">– Dat maak ik zelf wel uit.</p>
+			<p class="zwak">– Toe maar. Agressief hoor. In mijn tijd waren we…</p>
+			<p class="sterk">– ‘In mijn tijd, in mijn tijd…’ Dat is ook mijn tijd, meneertje. Want jij bent mij. Ik ben hier dit stompzinnige dialoogje in mezelf aan het voeren. Een dialogue intérieur, heet dat volgens mij.</p>
+			<p class="zwak">– Was dat echt nodig?</p>
+			<p class="sterk">– Was wat echt nodig?</p>
+			<p class="zwak">– Dat weet je best, want jij bent mij.</p>
+			<p>– Dat stukje ‘zelfbewustheid’ van deze tekst, bedoel je? Dat ik verraad dat jij en ik één en dezelfde zijn?</p>
+			<p>– Ja, natuurlijk bedoelde ik dat. Jij bent toch mij, je weet toch precies wat ik wil zeggen?</p>
 			</div>
 </section>
 <!-- Footer nav bar voor mobiel scherm -->
@@ -68,8 +69,7 @@
 		</nav>
 	</div>
 </footer>
-</div>
+	<script src="javascript/javascript.js">
+	</script>
 </body>
 </html>
-	<script type="text/javascript" src="javascript/javascript.js">
-	</script>

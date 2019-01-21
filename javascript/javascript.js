@@ -1,28 +1,42 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* wanneer de gebruiker klikt op de knop komt class bij */
 function filter() {
   document.getElementById("fieldset-small").classList.toggle("fieldset-big");
 }
-function searchScreen() {
-  document.getElementById("searchScreen").classList.toggle("search-screen");
-}
-// Get the modal
+
+// haalt id model op
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
+// haalt het id dat de model opent
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+// haalt de class op die de model sluit
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal 
+// wanneer de gebruiker klikt opent de model
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// wanneer de gebuiker op de (x) klikt sluit de model
 span.onclick = function() {
   modal.style.display = "none";
 }
+// haalt id model op
+var modal = document.getElementById('fieldset-small');
 
+// haalt het id dat de model opent
+var btn = document.getElementById("zoekOpen");
+
+// haalt de class op die de model sluit
+var span = document.getElementsByClassName("close")[0];
+
+// wanneer de gebruiker klikt opent de model
+h2.onclick = function() {
+  modal.style.display = "block";
+}
+
+// wanneer de gebuiker op de (x) klikt sluit de model
+h2.onclick = function() {
+  modal.style.display = "none";
+}
 
