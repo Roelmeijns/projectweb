@@ -50,7 +50,7 @@ header nav button{
 	right: 0em;
 }
 #profile{
-
+    font-size: 1.2em;
 	right: 2em;
 }
 
@@ -95,7 +95,7 @@ header nav button{
 	border-radius: 0.1875em;
 }
 h4{
-	margin: 50px 0 0 0;
+	margin: 3.125em 0 0 0;
     font-size: 4em;
     font-weight: 300;
     text-align: center;
@@ -249,6 +249,7 @@ fieldset input{
 	color: white;
 	float: right;
 	margin-bottom: 0.625em;
+	margin-right: 0.4286875em;
 }
 article{
 	max-width: 50%;
@@ -259,6 +260,7 @@ article{
 }
 .fa-download{
 	font-size: 1.7em;
+	color: #707070;
 }
 .fa-stack{
 
@@ -398,14 +400,14 @@ footer{
 	font-size: 1em !important;
 }
 .sorteren{
-	padding-left: 14.049px;
+	padding-left: 0.8780625em;
 }
 @keyframes grootte {
   from {font-weight: 0;}
   to {font-weight: bold;}
 }
 .zwak{
-	    margin-top: -27px;
+	    margin-top: -1.6875em;
 
 }
 /*zoek pagina*/
@@ -420,7 +422,7 @@ footer{
     background: white;
     color: gray;
     text-transform: unset;
-    margin-left: 7px;
+    margin-left: 0.4375em;
     }
 .zoekformulier{
 	margin: 0 0.625em 0.9375em 0.625em;
@@ -432,6 +434,16 @@ footer{
     height: 2.375em;
     border: none;
 }
+a h2:hover {
+  
+}
+p span:hover{
+	color: red;
+}
+p i:hover{
+	color: #6d105c;
+}
+
 
 
 @media only screen and (max-width: 24.375em) {
@@ -446,13 +458,23 @@ footer{
 }
 .verhaal{
 
-	padding: 0 40px 0 40px;
+	padding: 0 2.5em 0 2.5em;
 }
 fieldset{
 	margin-bottom: 1.25em;
 }
 article{
 	display: inline-block;
+}
+.fa-download{
+	font-size: 1.2em;
+	color: #971780;
+}
+.fa-download:hover{
+	color: gray;
+}
+.fa-serach:hover{
+	color: gray;
 }
 }
 @media only screen and (max-width: 47.9375em) {
@@ -480,6 +502,9 @@ article{
 	}
 	picture img{
 		display: none;
+	}
+	ul li a .fa-download{
+		color: #A6C4C4;
 	}
 }
 
